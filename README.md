@@ -2,37 +2,37 @@
 Machine Learning • Gradient Boosting • Streamlit
 
 A production-ready machine learning web application that predicts employee salaries based on experience, education, job role, age, and gender.
-Built with a tuned Gradient Boosting model and deployed using Streamlit.
+Built using a tuned Gradient Boosting model and deployed with Streamlit.
 
 ✨ Project Highlights
 
 🔍 End-to-end ML workflow (EDA → Modeling → Deployment)
 
-🧠 Tuned using GridSearchCV
+🧠 Hyperparameter tuning using GridSearchCV
 
 📊 Trained on real-world structured data
 
-🎯 Clean UI with dropdown-based inputs (no invalid entries)
+🎯 Dropdown-based inputs (no invalid entries)
 
-🚀 Deployment-ready Streamlit app
+🚀 Fully deployable Streamlit app
 
 🧠 Problem Statement
 
 Salary estimation is often subjective and inconsistent.
-This project aims to predict salaries accurately using historical data and machine learning, providing a transparent and data-driven approach.
+This project applies machine learning to predict salaries in a data-driven and transparent way using historical employee data.
 
 🛠️ Machine Learning Pipeline
-🔹 1. Exploratory Data Analysis (EDA)
+🔹 Exploratory Data Analysis (EDA)
 
 Salary distribution analysis
 
-Experience vs Salary trends
+Experience vs Salary relationship
 
-Education & Job Title impact
+Impact of education and job roles
 
 Outlier detection and removal
 
-🔹 2. Data Preprocessing
+🔹 Data Preprocessing
 
 Removed missing values
 
@@ -42,9 +42,9 @@ One-Hot Encoding for categorical variables
 
 Train–Test split (80/20)
 
-🔹 3. Model Training
+🔹 Model Training
 
-Four regression models were trained and evaluated:
+The following regression models were trained and evaluated:
 
 Linear Regression
 
@@ -54,11 +54,11 @@ Random Forest Regressor
 
 Gradient Boosting Regressor (Final Model)
 
-🔹 4. Hyperparameter Tuning
+🔹 Hyperparameter Tuning
 
 Used GridSearchCV (5-fold cross-validation)
 
-Optimized:
+Tuned parameters:
 
 n_estimators
 
@@ -68,7 +68,7 @@ max_depth
 
 min_samples_leaf
 
-🔹 5. Model Selection
+🔹 Model Selection
 
 Gradient Boosting achieved the highest test R²
 
@@ -80,13 +80,13 @@ Selected as the final model
 
 Algorithm: Gradient Boosting Regressor
 
-Metric Used: R² Score
+Evaluation Metric: R² Score
 
-Tuning: GridSearchCV
+Tuning Method: GridSearchCV
 
 Model Saved Using: joblib
 
-🖥️ Streamlit Web App
+🖥️ Streamlit Web Application
 App Features
 
 🔢 Numeric inputs for Age & Experience
@@ -104,7 +104,7 @@ App Features
 ├── salary_gb_model.pkl        # Trained Gradient Boosting model
 ├── model_features.pkl         # Feature list for inference alignment
 ├── Salary Data.csv            # Dataset
-├── requirements.txt           # Project dependencies
+├── requirements.txt           # Dependencies
 └── README.md                  # Documentation
 
 ⚙️ Installation & Usage
@@ -126,7 +126,7 @@ Go to 👉 https://streamlit.io/cloud
 
 Select the repository
 
-Set app.py as the main file
+Set app.py as the entry point
 
 Deploy 🚀
 

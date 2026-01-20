@@ -1,42 +1,48 @@
-💼 Salary Prediction System (Machine Learning + Streamlit)
+💼 Salary Prediction System
+Machine Learning • Gradient Boosting • Streamlit
 
-A machine learning web application that predicts employee salary based on age, experience, education level, gender, and job title.
-The model is trained using Gradient Boosting with GridSearchCV and deployed using Streamlit.
+A production-ready machine learning web application that predicts employee salaries based on experience, education, job role, age, and gender.
+Built with a tuned Gradient Boosting model and deployed using Streamlit.
 
-🚀 Live Features
+✨ Project Highlights
 
-Predict salary in real time
+🔍 End-to-end ML workflow (EDA → Modeling → Deployment)
 
-Dropdown-based inputs (no invalid entries)
+🧠 Tuned using GridSearchCV
 
-Trained on real-world structured data
+📊 Trained on real-world structured data
 
-Clean and modern UI
+🎯 Clean UI with dropdown-based inputs (no invalid entries)
 
-Deployment-ready Streamlit app
+🚀 Deployment-ready Streamlit app
 
-🧠 Machine Learning Workflow
-1. Exploratory Data Analysis (EDA)
+🧠 Problem Statement
+
+Salary estimation is often subjective and inconsistent.
+This project aims to predict salaries accurately using historical data and machine learning, providing a transparent and data-driven approach.
+
+🛠️ Machine Learning Pipeline
+🔹 1. Exploratory Data Analysis (EDA)
 
 Salary distribution analysis
 
-Experience vs Salary relationship
+Experience vs Salary trends
 
-Education, Gender, and Job Title impact
+Education & Job Title impact
 
-Outlier handling and data cleaning
+Outlier detection and removal
 
-2. Data Preprocessing
+🔹 2. Data Preprocessing
 
 Removed missing values
 
-Removed unrealistic salary entries
+Removed unrealistic salary values
 
-One-Hot Encoding for categorical features
+One-Hot Encoding for categorical variables
 
-Train-test split (80/20)
+Train–Test split (80/20)
 
-3. Model Building
+🔹 3. Model Training
 
 Four regression models were trained and evaluated:
 
@@ -48,7 +54,7 @@ Random Forest Regressor
 
 Gradient Boosting Regressor (Final Model)
 
-4. Hyperparameter Tuning
+🔹 4. Hyperparameter Tuning
 
 Used GridSearchCV (5-fold cross-validation)
 
@@ -62,42 +68,87 @@ max_depth
 
 min_samples_leaf
 
-5. Model Selection
+🔹 5. Model Selection
 
 Gradient Boosting achieved the highest test R²
 
 Best balance between bias and variance
 
-Selected as final model
+Selected as the final model
 
-🏆 Final Model
+🏆 Final Model Details
 
 Algorithm: Gradient Boosting Regressor
 
-Tuning Method: GridSearchCV
+Metric Used: R² Score
 
-Metric: R² Score
+Tuning: GridSearchCV
 
-Saved using: joblib
+Model Saved Using: joblib
 
-🖥️ Web Application (Streamlit)
+🖥️ Streamlit Web App
+App Features
 
-The trained model is deployed as an interactive Streamlit app.
+🔢 Numeric inputs for Age & Experience
 
-App Features:
+📚 Dropdowns for Education, Gender, and Job Title
 
-Numeric inputs for Age & Experience
+🧩 Automatic feature alignment (prevents inference errors)
 
-Dropdowns for Education, Gender, and Job Title
+🎨 Modern dark-themed UI
 
-Automatic feature alignment to avoid prediction errors
-
-Styled UI with prediction highlight
+💰 Highlighted salary prediction output
 
 📁 Project Structure
-├── app.py                     # Streamlit application
+├── app.py                     # Streamlit web app
 ├── salary_gb_model.pkl        # Trained Gradient Boosting model
-├── model_features.pkl         # Feature list for column alignment
+├── model_features.pkl         # Feature list for inference alignment
 ├── Salary Data.csv            # Dataset
-├── requirements.txt           # Dependencies
-└── README.md                  # Project documentation
+├── requirements.txt           # Project dependencies
+└── README.md                  # Documentation
+
+⚙️ Installation & Usage
+1️⃣ Clone the repository
+git clone https://github.com/your-username/salary-prediction-app.git
+cd salary-prediction-app
+
+2️⃣ Install dependencies
+pip install -r requirements.txt
+
+3️⃣ Run the app locally
+streamlit run app.py
+
+☁️ Deployment (Streamlit Cloud)
+
+Push the project to GitHub
+
+Go to 👉 https://streamlit.io/cloud
+
+Select the repository
+
+Set app.py as the main file
+
+Deploy 🚀
+
+🧰 Tech Stack
+
+Python
+
+Pandas, NumPy
+
+Scikit-learn
+
+Gradient Boosting
+
+GridSearchCV
+
+Streamlit
+
+Joblib
+
+👤 Author
+
+Farhan
+Machine Learning | Data Science | Python
+
+Built with ❤️ using Machine Learning & Streamlit
